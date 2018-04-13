@@ -97,8 +97,9 @@ figure {
 	width: 100%;
 	min-width: 120px;
 	float: left;
-	margin-bottom: 8%;
+	margin-bottom: 12%;
 	display: relative;
+
 }
 img {
 	width: 100%;
@@ -106,7 +107,31 @@ img {
 
 }
 
+figcaption {
+	padding-left: 2px;
+	font-size: 2em;
+}
 .footer {
 	background-color: #DE5254;
+	text-align: center;
+	display: table;
+
+}
+.footer p {
+	height: 40px;
+	display: block;
+	float: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+@media screen and (max-width: 820px) {
+	figcaption {
+		font-size: 1em;
+	}
+@media screen and (max-width: 525px) {
+	figcaption {
+		font-size: 0.8em;
+	}
+
 
 }
