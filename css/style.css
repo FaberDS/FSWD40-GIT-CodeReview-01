@@ -1,0 +1,112 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.wrapper{
+	font-family: Arial, sans-serif;
+}
+.logo-area {
+	width: 100%;
+	height: 100px;
+	background-color: #DE5254;
+
+}
+
+.header, .footer {
+	width: 100%;
+	color: #FAE9E9;
+}
+.header {
+/*	overflow: hidden;*/
+	height: 100px;
+	display: flex;
+	}
+.logo{
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 180px;
+	height: 60px;
+	background-image: url("../img/codefactory-vienna-1.png")
+/*	background-repeat: none;
+	background-size: cover;*/
+
+}
+.title{
+/*	width: 100%;*/
+	height: inherit;
+/*	background-color: green;*/
+	position: relative;
+	float: left;
+	font-size: 1.2em;
+
+}
+.headline{
+	display: inline;
+	position: relative;
+	top: 40px;
+}
+.navbar {
+	margin-top: 4px;
+	width: 100%;
+	height: 40px;
+	background-color: #868686;
+}
+ul {
+	list-style-type: none;
+/*	position: fixed;*/
+
+	width: 100%;
+}
+.navbar li {
+	float: left;
+/*	border: 1px solid red;*/
+}
+.navbar a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px 0 10px 0;
+	margin: 0 25px 0 25px;
+	text-decoration: none;
+}
+.content {
+	margin-top: 15px;
+	display: flex;
+}
+#content-left, #content-right{
+	width:48%;
+	position: relative;
+}
+
+#content-left {
+	margin-right: 2%;
+
+}
+#content-right {
+	margin-left: 2%;
+}
+
+figure {
+	width: inherit;
+	height: inherit;
+}
+.img {
+	height: 40vw;
+/*	object-fit: fill;*/
+	width: 100%;
+	min-width: 120px;
+	float: left;
+	margin-bottom: 8%;
+	display: relative;
+}
+img {
+	width: 100%;
+	height: 90%;
+
+}
+
+.footer {
+	background-color: #DE5254;
+
+}
