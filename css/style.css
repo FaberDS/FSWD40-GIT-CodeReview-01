@@ -27,7 +27,8 @@
 	margin-bottom: 20px;
 	width: 180px;
 	height: 60px;
-	background-image: url("../img/codefactory-vienna-1.png")
+	background-image: url("../img/codefactory-vienna-1.png");
+	
 /*	background-repeat: none;
 	background-size: cover;*/
 
@@ -124,13 +125,44 @@ figcaption {
 	display: table-cell;
 	vertical-align: middle;
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1000px) {
+	figcaption {
+		font-size: 1.8em;
+	}
+@media screen and (max-width: 900px) {
+	figcaption {
+		font-size: 1.2em;
+	}
+@media screen and (max-width: 700px) {
 	figcaption {
 		font-size: 1em;
 	}
+@media screen and (max-width: 590px) {
+	.title{
+		font-size: 0.9em;
+	}
+	.logo {
+		height: 40px
+		margin-top: 10px;
+	}
+
+
+}
 @media screen and (max-width: 525px) {
 	figcaption {
 		font-size: 0.8em;
+	}
+}
+@media screen and (max-width: 450px) {
+	figcaption {
+		font-size: 0.7em;
+	}
+
+
+}
+@media screen and (max-width: 400px) {
+	figcaption {
+		font-size: 0.6em;
 	}
 
 
