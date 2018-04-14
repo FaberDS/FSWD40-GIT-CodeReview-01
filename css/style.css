@@ -4,13 +4,15 @@
 }
 body{
 
-  	min-width: 350px;        /* Suppose you want minimum width of 1000px */
+  	min-width: 440px;        /* Suppose you want minimum width of 1000px */
    	width: auto !important;  /* Firefox will set width as auto */
    	width:1000px;            /* As IE6 ignores !important it will set width as 1000px; */
 }
+/*set font-family*/
 .wrapper{
 	font-family: Arial, sans-serif;
 }
+
 .logo-area {
 	width: 100%;
 	height: 100px;
@@ -27,6 +29,7 @@ body{
 	height: 100px;
 	display: flex;
 	}
+	/*place logo in the header*/
 .logo{
 	float: left;
 	margin-top: 20px;
@@ -53,18 +56,28 @@ body{
 .navbar {
 	margin-top: 4px;
 	width: 100%;
-	height: 40px;
+	height: 45px;
 	background-color: #868686;
 }
 ul {
 	list-style-type: none;
+	height: inherit;
 /*	position: fixed;*/
 
 	width: 100%;
 }
 .navbar li {
+	height: inherit;
 	float: left;
 /*	border: 1px solid red;*/
+}
+.navbar li:hover{
+	background-color: #DE9254;
+    border-width:3px;  
+    border-style:outset;
+}
+.active{
+	background-color: blue;
 }
 .navbar a {
 	display: block;
@@ -113,7 +126,7 @@ img {
 
 figcaption {
 	padding-left: 2px;
-	font-size: 2em;
+	font-size: 2.2em;
 }
 .footer {
 	background-color: #DE5254;
@@ -128,6 +141,122 @@ figcaption {
 	display: table-cell;
 	vertical-align: middle;
 }
+.profile {
+	background-color: #DE5254;
+	position: relative;
+	left: 25%;
+	width: 50%;
+	margin-bottom: 20px;
+/*	height: 50vw;*/
+	min-width: 280px;
+/*	display: -webkit-flex; 
+    -webkit-justify-content: flex-start;  Safari 6.1+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+.profile-header {
+	display: flex;
+}
+
+.profile-image {
+	width: 100%;
+}
+#profile-jpeg{
+	display: flex;
+	text-align: center;
+	height: 20vw;
+	margin-top:20px;
+	margin-left:20px;
+	min-width: inherit;
+	width: inherit;
+	border-radius: 100%;
+	min-width: 150px;
+
+}
+.profile-title{
+	text-align: center;
+	clear: both;
+	width: 100%;
+	padding: 10px;
+}
+.profile-headletter{
+	color: blue;
+}
+.profile-content{
+	padding:25px;
+}
+.profile-content h2, ul {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.profile-content ul{
+	padding-left: 40px;
+	list-style-type: square;
+}
+.profile-content p, .content-blog p{
+	line-height: 1.5em;
+}
+div [class^="column"]{
+	width: inherit;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 25px;
+	padding: 25px;
+	background-color: #DE5254;
+/*	background-image: url(img/code.jpeg);*/
+
+
+}
+.content-blog {
+	margin-bottom: 25px;
+}
+
+div [class^="column-blog"] {
+	color: #FAE9E9;
+}
+div [class^="column-"] {
+}
+div [class^="column-blog"] h1{
+	font-size: 4em;
+	color: blue;
+}
+div [class^="column-blog"] h4{
+	font-style: italic;
+	}
+.column-blog-header-r {
+	position: relative;
+	flex: right;
+	text-align: right;
+	margin-right: 40px;
+}
+.form-div {
+	min-width: 180px;
+	width: 40%;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-bottom: 20px;
+	padding: 5vw;
+	text-align: center;
+	background-color: #DE5254;
+	 display: -webkit-flex; /* Safari */
+    -webkit-justify-content: flex-start; /* Safari 6.1+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form>.logo{
+	text-align: center;
+	clear: both;
+
+}
+form input {
+	margin-bottom: 20px;
+
+}
+
 @media screen and (max-width: 1000px) {
 	figcaption {
 		font-size: 1.8em;
@@ -185,6 +314,7 @@ figcaption {
 
 
 }
+
 @media screen and (max-width: 420px) {
 	figcaption {
 		font-size: 0.7em;
@@ -208,7 +338,7 @@ figcaption {
 }
 @media screen and (max-width: 320px) {
 	figcaption {
-		font-size: 0.6em;
+		font-size: 0.5em;
 	}
 	.headline{
 
