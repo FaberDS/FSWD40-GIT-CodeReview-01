@@ -8,11 +8,11 @@ body{
    	width: auto !important;  /* Firefox will set width as auto */
    	width:1000px;            /* As IE6 ignores !important it will set width as 1000px; */
 }
-/*set font-family*/
+
 .wrapper{
 	font-family: Arial, sans-serif;
 }
-
+/* ---------------------------- Header styling---------------------------- */
 .logo-area {
 	width: 100%;
 	height: 100px;
@@ -53,6 +53,7 @@ body{
 	position: relative;
 	top: 40px;
 }
+/* ---------------------------- Navbar positioning and styling---------------------------- */
 .navbar {
 	margin-top: 4px;
 	width: 100%;
@@ -87,6 +88,7 @@ ul {
 	margin: 0 25px 0 25px;
 	text-decoration: none;
 }
+/* ----------------------------  Positioning index.html---------------------------- */
 .content {
 	margin-top: 15px;
 	display: flex;
@@ -103,7 +105,7 @@ ul {
 #content-right {
 	margin-left: 2%;
 }
-
+/* ---------------------------- Image positioning and styling---------------------------- */
 figure {
 	width: inherit;
 	height: inherit;
@@ -128,6 +130,7 @@ figcaption {
 	padding-left: 2px;
 	font-size: 2.2em;
 }
+/*---------------------------- Footer styling Positioning---------------------------- */
 .footer {
 	background-color: #DE5254;
 	text-align: center;
@@ -141,6 +144,7 @@ figcaption {
 	display: table-cell;
 	vertical-align: middle;
 }
+/*----------------------------  About me Seetings---------------------------- */
 .profile {
 	background-color: #DE5254;
 	position: relative;
@@ -172,8 +176,8 @@ figcaption {
 	width: inherit;
 	border-radius: 100%;
 	min-width: 150px;
-
 }
+/* ---------------------------- About me Content seeting---------------------------- */
 .profile-title{
 	text-align: center;
 	clear: both;
@@ -194,6 +198,7 @@ figcaption {
 	padding-left: 40px;
 	list-style-type: square;
 }
+/*----------------------------  Blog Settings---------------------------- */
 .profile-content p, .content-blog p{
 	line-height: 1.5em;
 }
@@ -230,6 +235,7 @@ div [class^="column-blog"] h4{
 	text-align: right;
 	margin-right: 40px;
 }
+/*---------------------------- Form Setting---------------------------- */
 .form-div {
 	min-width: 180px;
 	width: 40%;
@@ -256,7 +262,15 @@ form input {
 	margin-bottom: 20px;
 
 }
-
+.form-div .submit{
+	margin-top: 20px;
+	border-radius: 4px;
+	background-color: #868686;
+	color: white;
+	font-size: 1.5em;
+	padding: 5px;
+}
+/*---------------------------- Resizing for different screen sizes---------------------------- */
 @media screen and (max-width: 1000px) {
 	figcaption {
 		font-size: 1.8em;
